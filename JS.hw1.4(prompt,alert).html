@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let agev=prompt('Введите ваш возраст: ');
+     const checkAge = function(age) {
+    let age_2=18;
+    let age_3=60;
+  if (isNaN(age) == true) { 
+      alert('Ошибка! Введите число. ')
+  }
+    else {
+      if (age<age_2) {
+        alert("You don’t have access cause your age is "+age+" It’s less then");  
+        } else if (age>=age_2 && age<age_3) {
+            alert('Welcome  !');
+        }
+          else if (age>age_3) {    
+            alert('Keep calm and look Culture channel');
+        }
+          else {
+            alert('Technical work');
+        }
+      }
+  };
+  checkAge(agev)
+  </script>
+ 
+</body>
+</html>
